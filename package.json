@@ -1,0 +1,23 @@
+{
+  "name": "login-graphic-verification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "bin": {
+    "lgv": "./index.js"
+  },
+  "author": "Sam Shih",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "canvas": "^2.6.1",
+    "commander": "^6.0.0",
+    "express": "^4.17.1",
+    "redis": "^3.0.2",
+    "uuid": "^8.3.0"
+  }
+}
