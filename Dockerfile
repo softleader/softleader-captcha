@@ -11,5 +11,5 @@ COPY . .
 CMD node index.js serve \
     --redis-host ${REDIS_HOST} \
     --redis-port ${REDIS_PORT} \
-    --redos-password ${REDIS_PASSWORD} \
+    --redis-password ${REDIS_PASSWORD} \
     --port ${PORT}
