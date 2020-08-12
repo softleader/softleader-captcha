@@ -3,7 +3,7 @@ swarm:
     restart: always
     image: softleader/softleader-captcha:1.0.0
     ports:
-      - "${CAPTCHA_PORT}:8080"
+      - "${CAPTCHA_PORT}:80"
     deploy:
       resources:
         limits:
