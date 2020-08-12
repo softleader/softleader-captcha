@@ -1,14 +1,14 @@
 {
-  "name": "login-graphic-verification",
+  "name": "softleader-captcha",
   "version": "1.0.0",
-  "description": "",
+  "description": "softleader-captcha for login verification",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "bin": {
-    "lgv": "./index.js"
+    "slc": "./index.js"
   },
   "author": "Sam Shih",
   "license": "ISC",
