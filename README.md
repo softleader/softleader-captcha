@@ -78,7 +78,7 @@ Options:
   -h, --help                         display help for command
 ```
 
-#### RESTful API
+#### RESTful APIs
 
 ##### Generate an answer & token and save to redis, then render the captcha
 
