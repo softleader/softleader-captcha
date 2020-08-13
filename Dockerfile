@@ -10,16 +10,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
 
-ENV PORT=80
-ENV REDIS_HOST=localhost
-ENV REDIS_PORT=6379
-ENV REDIS_PASSWORD=""
-
 COPY index.js ./
 COPY lib ./lib/
 
-CMD node index.js serve \
-    --redis-host ${REDIS_HOST} \
-    --redis-port ${REDIS_PORT} \
-    --redis-password ${REDIS_PASSWORD} \
-    --port ${PORT}
+ENTRYPOINT [ "node", "index.js" ]

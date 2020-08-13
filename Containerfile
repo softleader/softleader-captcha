@@ -1,7 +1,8 @@
 swarm:
   captcha:
     restart: always
-    image: softleader/softleader-captcha:1.0.0
+    image: softleader/captcha:1.0.0
+    command: ["serve", "--redis-host=redis", "--redis-port=6379", "--redis-password=${REDIS_PASSWORD}"]
     ports:
       - "${CAPTCHA_PORT}:80"
     deploy:
@@ -9,8 +10,4 @@ swarm:
         limits:
           memory: 256M
           cpus: '1'
-    environment:
-      - REDIS_HOST=redis
-      - REDIS_PORT=6379
-      - REDIS_PASSWORD=${REDIS_PASSWORD}
 k8s:
