@@ -22,7 +22,7 @@ docker run softleader/captcha -h
 Example: render captcha.png to current directory
 
 ```sh
-docker run -v $(pwd):/out softleader/captcha render -o /out/captcha.png
+docker run -v $(pwd):/out softleader/captcha:{latest-tag} render -o /out/captcha.png
 ```
 
 ## Usage
