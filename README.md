@@ -95,7 +95,7 @@ pass query-params can overrite defulat values:
 - width
 - height
 
-##### Delete by token with asnwer
+##### Delete by token and asnwer
 
 ```
 DELETE /:token/:answer
@@ -107,7 +107,7 @@ response status:
 - 404 - wrong answer!
 - 400 - unknow exception.
 
-##### Delete by token with asnwer
+##### Delete by token
 
 ```
 DELETE /:token
