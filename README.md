@@ -56,7 +56,7 @@ Options:
 
 ## Getting started
 
-### node
+### Node.js
 
 如果你的 runtime 環境有 [Node.js](https://nodejs.org/en/) 以及 source code, 你可以在 source code 根目錄執行:
 
@@ -64,7 +64,7 @@ Options:
 node index.js -h
 ```
 
-### docker
+### Docker
 
 如果你的 runtime 有 [Docker](https://www.docker.com/), 可以執行:
 
