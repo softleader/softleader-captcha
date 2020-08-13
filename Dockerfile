@@ -1,14 +1,15 @@
-FROM node:lts-buster
+FROM node:lts-alpine
 
-# https://github.com/Automattic/node-canvas/wiki/Installation%3A-Ubuntu-and-other-Debian-based-systems
-RUN apt-get update &&\
-    apt-get install -y build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev &&\
-    apt-get autoclean
+# https://github.com/Automattic/node-canvas/issues/866
+RUN apk update &&\
+    apk add --no-cache build-base g++ cairo-dev jpeg-dev pango-dev giflib-dev &&\
+    apk add --repository http://dl-3.alpinelinux.org/alpine/edge/testing libmount ttf-dejavu ttf-droid ttf-freefont ttf-liberation ttf-ubuntu-font-family fontconfig &&\
+    rm -rf /var/cache/apk/*
 
 WORKDIR /app
 
 # for docker layer cache
-COPY package.json package-lock.json ./
+COPY package*.json ./
 RUN npm install
 
 COPY index.js ./

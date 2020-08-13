@@ -19,6 +19,12 @@ node index.js -h
 docker run softleader/captcha -h
 ```
 
+Example: render captcha.png to current directory
+
+```sh
+docker run -v $(pwd):/out softleader/captcha render -o /out/captcha.png
+```
+
 ## Usage
 
 ```shell
