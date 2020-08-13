@@ -104,5 +104,16 @@ DELETE /:token/:answer
 response status:
 
 - 200 - correct answer, token successful deleted.
-- 404 - wrong answer! token will be deleted.
+- 404 - wrong answer!
+- 400 - unknow exception.
+
+##### Delete by token with asnwer
+
+```
+DELETE /:token
+```
+
+response status:
+
+- 200 - token successful deleted.
 - 400 - unknow exception.
