@@ -1,6 +1,24 @@
 # softleader-captcha
 SoftLeader Captcha
 
+## Getting started
+
+### Node.js
+
+如果你的 runtime 環境有 [Node.js](https://nodejs.org/en/) 以及 source code, 你可以在 source code 根目錄執行:
+
+```shell
+node index.js -h
+```
+
+### Docker
+
+如果你的 runtime 有 [Docker](https://www.docker.com/), 可以執行:
+
+```shell
+docker run softleader/captcha -h
+```
+
 ## Usage
 
 ```shell
@@ -52,22 +70,4 @@ Options:
   --redis-host [redis-host]          redis host (default: "127.0.0.1")
   --redis-password [redis-password]  redis password
   -h, --help                         display help for command
-```
-
-## Getting started
-
-### Node.js
-
-如果你的 runtime 環境有 [Node.js](https://nodejs.org/en/) 以及 source code, 你可以在 source code 根目錄執行:
-
-```shell
-node index.js -h
-```
-
-### Docker
-
-如果你的 runtime 有 [Docker](https://www.docker.com/), 可以執行:
-
-```shell
-docker run softleader/captcha -h
 ```
