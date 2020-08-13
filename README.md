@@ -65,7 +65,7 @@ Options:
   --width [width]                    Specify the width of image. (default: 100)
   --height [height]                  Specify the height of image. (default: 40)
   --port [port]                      Specify server port. (default: 80)
-  -t ,--ttl [ttl]                    Expire time of redis key(unit: seconds). (default: 60)
+  -t, --ttl [ttl]                    Expire time of redis key(unit: seconds). (default: 60)
   --redis-port [redis-port]          redis port (default: 6379)
   --redis-host [redis-host]          redis host (default: "127.0.0.1")
   --redis-password [redis-password]  redis password

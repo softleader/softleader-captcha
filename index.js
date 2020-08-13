@@ -24,7 +24,7 @@ program
     .option('--width [width]', 'Specify the width of image.', 100)
     .option('--height [height]', 'Specify the height of image.', 40)
     .option('--port [port]', 'Specify server port.', 80)
-    .option('-t ,--ttl [ttl]', 'Expire time of redis key(unit: seconds).', 60)
+    .option('-t, --ttl [ttl]', 'Expire time of redis key(unit: seconds).', 60)
     .option('--redis-port [redis-port]', 'Redis port', 6379)
     .option('--redis-host [redis-host]', 'Redis host', '127.0.0.1')
     .option('--redis-password [redis-password]', 'Redis password')
