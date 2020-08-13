@@ -17,7 +17,7 @@ program
 
 program
     .command('serve')
-    .description('Start a web server to serve RESTful render api')
+    .description('Start a web server to serve RESTful APIs (requirs redis)')
     .option('-l, --length [length]', 'Specify the length of captcha.', 4)
     .option('-p, --pattern [pattern]', 'd: all digit, a: all alphabet, da: digit & alphabet.', 'da')
     .option('-c, --case [case]', 'u: upper case, l: lower case, ci: case insensitive.', 'ci')

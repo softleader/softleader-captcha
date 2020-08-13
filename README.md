@@ -62,7 +62,7 @@ Options:
 ```shell
 Usage: index serve [options]
 
-Start a web server to serve RESTful render api
+Start a web server to serve RESTful APIs (requirs redis)
 
 Options:
   -l, --length [length]              Specify the length of captcha. (default: 4)
@@ -77,3 +77,32 @@ Options:
   --redis-password [redis-password]  redis password
   -h, --help                         display help for command
 ```
+
+#### API
+
+- Generate an answer & token and save to redis, then render the captcha
+
+```
+POST /render 
+```
+
+pass query-params can overrite defulat values:
+
+- ttl
+- length
+- pattern
+- case
+- width
+- height
+
+- Delete by token with asnwer
+
+```
+DELETE /:token/:answer
+```
+
+response status:
+
+- 200 - answer correct, delete success
+- 404 - answer wrong!
+- 400 - unknow exception
