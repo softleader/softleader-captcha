@@ -8,6 +8,6 @@ swarm:
     deploy:
       resources:
         limits:
-          memory: 256M
-          cpus: '1'
+          memory: 50M
+          cpus: '0.1'
 k8s:
