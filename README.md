@@ -103,6 +103,6 @@ DELETE /:token/:answer
 
 response status:
 
-- 200 - answer correct, delete success
-- 404 - answer wrong!
-- 400 - unknow exception
+- 200 - correct answer, token successful deleted.
+- 404 - wrong answer! token will be deleted.
+- 400 - unknow exception.
