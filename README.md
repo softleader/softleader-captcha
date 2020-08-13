@@ -78,9 +78,9 @@ Options:
   -h, --help                         display help for command
 ```
 
-#### API
+#### RESTful API
 
-- Generate an answer & token and save to redis, then render the captcha
+##### Generate an answer & token and save to redis, then render the captcha
 
 ```
 POST /render 
@@ -95,7 +95,7 @@ pass query-params can overrite defulat values:
 - width
 - height
 
-- Delete by token with asnwer
+##### Delete by token with asnwer
 
 ```
 DELETE /:token/:answer
