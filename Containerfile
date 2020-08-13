@@ -1,7 +1,7 @@
 swarm:
   captcha:
     restart: always
-    image: softleader/captcha:1.0.0
+    image: softleader/captcha:1.0.1
     command: ["serve", "--redis-host=redis", "--redis-port=6379", "--redis-password=${REDIS_PASSWORD}"]
     ports:
       - "${CAPTCHA_PORT}:80"
