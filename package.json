@@ -13,6 +13,7 @@
   "author": "Sam Shih",
   "license": "ISC",
   "dependencies": {
+    "@godaddy/terminus": "^4.4.1",
     "body-parser": "^1.19.0",
     "canvas": "^2.6.1",
     "commander": "^6.0.0",

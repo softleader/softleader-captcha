@@ -10,4 +10,10 @@ swarm:
         limits:
           memory: 50M
           cpus: '0.1'
+    healthcheck:
+      test: [“CMD”, “curl”, “--fail”, “127.0.0.1:80/healthcheck”]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
 k8s:
