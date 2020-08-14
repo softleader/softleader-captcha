@@ -1,5 +1,5 @@
 # Project exclude paths
 /node_modules/
 /.idea/
-/login-graphic-verification.iml
+/*.iml
 .DS_Store
