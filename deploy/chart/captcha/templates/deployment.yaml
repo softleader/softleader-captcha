@@ -24,6 +24,7 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          args: ["serve", "--redis-host={{ .Values.redis.host }}", "--redis-port={{ .Values.redis.port }}", "--redis-password={{ .Values.redis.password }}"]
           ports:
             - name: http
               containerPort: 80
