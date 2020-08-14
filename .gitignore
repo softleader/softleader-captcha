@@ -2,3 +2,4 @@
 /node_modules/
 /.idea/
 /login-graphic-verification.iml
+.DS_Store
